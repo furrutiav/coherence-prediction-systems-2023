@@ -1,0 +1,48 @@
+#remove non-letters
+[^A-zÀ-ú]  
+##EXEPTIONS
+#CE -> KE
+#^ce$ KE
+##PRIMARY RULES
+#á -> aa
+[á] AA
+#é -> ee
+[é] EE
+#í -> ii 
+[í] II
+#ó -> oo 
+[ó] OO
+ #ú -> uu
+[ú] UU
+#x -> KS 
+x KS
+#w -> GU 
+w GU 
+#ch or tch to CH - CH sound represented as 0
+t?ch 0
+#ce -> SE
+ce SE
+#ci -> SI
+ci SI
+#other c's -> K
+[c] K
+#ge -> JE
+ge JE
+#gi -> JI
+gi JI
+#qu -> k
+qu K
+#ci -> SI
+ci SI
+#remove extra r
+r+ R 
+# z -> S
+z S 
+# y -> I
+y I
+# v -> B
+v B
+# h -> silent
+h  
+#ll -> I
+ll I
